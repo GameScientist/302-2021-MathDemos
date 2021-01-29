@@ -19,7 +19,7 @@ public class RevolveAround : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        age += Time.deltaTime;
+        age += Time.deltaTime * HUDController.timeScale;
 
         Vector3 offset = new Vector3();
         offset.x = Mathf.Sin(age) * radius;
